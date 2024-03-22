@@ -38,8 +38,15 @@ public class BalancedBracket {
     public static void main(String[] args) {
         Scanner cs = new Scanner(System.in);
 
+        System.out.print("Enter a sequence of the brackets: ");
         String str = cs.nextLine();
 
-        System.out.println(isBalanced(str));
+        Boolean ans = isBalanced(str);
+
+        if (ans == true) {
+            System.out.println("The sequence of brackets is balanced.");
+        } else {
+            System.out.println("The sequence of brackets is not balanced.");
+        }
     }
 }
